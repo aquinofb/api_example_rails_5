@@ -1,6 +1,7 @@
 class OrdersController < ApplicationController
 
   def index
-    render json: Order.all
+    orders = Order.includes(items: :product)
+    render json: orders
   end
 end
