@@ -31,5 +31,11 @@ config/secrets.yml
 *.bowerrc
 bower.json
 
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
 # Ignore pow environment settings
 .powenv
